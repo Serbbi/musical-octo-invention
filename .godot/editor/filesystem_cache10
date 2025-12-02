@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1764691651
+Cube.glb::PackedScene::1909021675386574986::1764690609::1764691653::1::::<><><>0<>0<>cde51b3f0fbeb821f7d9e06e4df1731a<>res://.godot/imported/Cube.glb-dc5d0025a1c17debcd6525ad30e7d81f.scn::
+icon.svg::CompressedTexture2D::4102805442833295627::1762519757::1764691653::1::::<><><>0<>0<>4d1f5424043ccd8b4fe1d2eb847c6f9f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene::1525235017154407302::1764690936::0::1::::<><><>0<>0<><>::uid://c5hb4541lwqtw::::res://tiles.tres<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn
+README.md::TextFile::-1::1764691570::0::1::::<><><>0<>0<><>::
+tiles.tres::MeshLibrary::6893071447518337468::1764691131::0::1::::<><><>0<>0<><>::
+tiles.tscn::PackedScene::6321407817815092085::1764691103::0::1::::<><><>0<>0<><>::
+::res://addons/::1764689998
+::res://addons/proto_controller/::1764690004
+proto_controller.gd::GDScript::4952874083666833175::1764690004::0::1::::<>CharacterBody3D<><>0<>0<><>::
+proto_controller.tscn::PackedScene::3717544648773412845::1764690004::0::1::::<><><>0<>0<><>::res://addons/proto_controller/proto_controller.gd
