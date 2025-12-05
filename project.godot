@@ -14,3 +14,7 @@ config/name="Farm Game"
 run/main_scene="uid://vy3nr71u80p3"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[physics]
+
+3d/default_gravity=25.0

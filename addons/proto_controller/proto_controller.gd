@@ -20,9 +20,9 @@ extends CharacterBody3D
 ## Look around rotation speed.
 @export var look_speed : float = 0.002
 ## Normal speed.
-@export var base_speed : float = 7.0
+@export var base_speed : float = 5.0
 ## Speed of jump.
-@export var jump_velocity : float = 4.5
+@export var jump_velocity : float = 8
 ## How fast do we run?
 @export var sprint_speed : float = 10.0
 ## How fast do we freefly?
@@ -50,13 +50,12 @@ var move_speed : float = 0.0
 var freeflying : bool = false
 
 ## IMPORTANT REFERENCES
-@onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
 
 func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
-	look_rotation.x = head.rotation.x
+	look_rotation.x = $CameraController.rotation.x
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
@@ -69,22 +68,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if mouse_captured and event is InputEventMouseMotion:
 		rotate_look(event.relative)
 	
-	# Toggle freefly mode
-	if can_freefly and Input.is_action_just_pressed(input_freefly):
-		if not freeflying:
-			enable_freefly()
-		else:
-			disable_freefly()
 
 func _physics_process(delta: float) -> void:
-	# If freeflying, handle freefly and nothing else
-	if can_freefly and freeflying:
-		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
-		var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		motion *= freefly_speed * delta
-		move_and_collide(motion)
-		return
-	
 	# Apply gravity to velocity
 	if has_gravity:
 		if not is_on_floor():
@@ -104,7 +89,11 @@ func _physics_process(delta: float) -> void:
 	# Apply desired movement to velocity
 	if can_move:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
-		var move_dir := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		var move_dir = ($CameraController.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		
+		if input_dir != Vector2(0,0):
+			$Mesh.rotation_degrees.y = $CameraController.rotation_degrees.y - rad_to_deg(input_dir.angle()) - 90
+		
 		if move_dir:
 			velocity.x = move_dir.x * move_speed
 			velocity.z = move_dir.z * move_speed
@@ -117,30 +106,26 @@ func _physics_process(delta: float) -> void:
 	
 	# Use velocity to actually move
 	move_and_slide()
+	
+	$CameraController.position = lerp($CameraController.position, position, 0.1)
 
 
 ## Rotate us to look around.
 ## Base of controller rotates around y (left/right). Head rotates around x (up/down).
 ## Modifies look_rotation based on rot_input, then resets basis and rotates by look_rotation.
-func rotate_look(rot_input : Vector2):
-	look_rotation.x -= rot_input.y * look_speed
+func rotate_look(rot_input: Vector2):
+	look_rotation.x -= rot_input.y * look_speed   # pitch
+	look_rotation.y -= rot_input.x * look_speed   # yaw
+
+	# Clamp vertical look
 	look_rotation.x = clamp(look_rotation.x, deg_to_rad(-85), deg_to_rad(85))
-	look_rotation.y -= rot_input.x * look_speed
-	transform.basis = Basis()
-	rotate_y(look_rotation.y)
-	head.transform.basis = Basis()
-	head.rotate_x(look_rotation.x)
 
+	# Apply yaw to the body
+	#rotation.y = look_rotation.y
 
-func enable_freefly():
-	collider.disabled = true
-	freeflying = true
-	velocity = Vector3.ZERO
-
-func disable_freefly():
-	collider.disabled = false
-	freeflying = false
-
+	# Apply pitch to camera controller
+	$CameraController.rotation.x = look_rotation.x
+	$CameraController.rotation.y = look_rotation.y
 
 func capture_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

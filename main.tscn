@@ -13,3 +13,6 @@ data = {
 
 [node name="ProtoController" parent="." instance=ExtResource("2_0xm2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.6052245, 0.79605484, 0, -0.79605484, 0.6052245, 0, 18.14602, 0)
