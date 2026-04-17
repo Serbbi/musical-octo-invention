@@ -5,6 +5,8 @@
 
 extends CharacterBody3D
 
+@export var inventory_data: InventoryData
+
 ## Can we move around?
 @export var can_move : bool = true
 ## Are we affected by gravity?
@@ -52,6 +54,10 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var collider: CollisionShape3D = $Collider
 
+signal toggle_inventory()
+
+@onready var interact_ray: RayCast3D = $CameraController/CameraTarget/InteractRay
+
 func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
@@ -61,15 +67,31 @@ func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
-	if Input.is_key_pressed(KEY_ESCAPE):
-		release_mouse()
+	#if Input.is_key_pressed(KEY_ESCAPE):
+		#release_mouse()
+		
+	if Input.is_action_just_pressed("inventory"):
+		toggle_inventory.emit()
 	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
 		rotate_look(event.relative)
+		
+	if Input.is_action_just_pressed("interact"):
+		interact()
 	
 
 func _physics_process(delta: float) -> void:
+	var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
+	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		$AnimationPlayer.play("Jump");
+	elif is_on_floor() and input_dir != Vector2.ZERO:
+		$AnimationPlayer.play("Walk");
+	elif is_on_floor() and input_dir == Vector2.ZERO:
+		$AnimationPlayer.play("Idle");
+	
+	
 	# Apply gravity to velocity
 	if has_gravity:
 		if not is_on_floor():
@@ -88,11 +110,10 @@ func _physics_process(delta: float) -> void:
 
 	# Apply desired movement to velocity
 	if can_move:
-		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
 		var move_dir = ($CameraController.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 		if input_dir != Vector2(0,0):
-			$Mesh.rotation_degrees.y = $CameraController.rotation_degrees.y - rad_to_deg(input_dir.angle()) - 90
+			$Armature.rotation_degrees.y = $CameraController.rotation_degrees.y - rad_to_deg(input_dir.angle()) - 90
 		
 		if move_dir:
 			velocity.x = move_dir.x * move_speed
@@ -161,3 +182,9 @@ func check_input_mappings():
 	if can_freefly and not InputMap.has_action(input_freefly):
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
+
+func interact() -> void:
+	if interact_ray.is_colliding():
+		var collider = interact_ray.get_collider()
+		if collider.has_method("interact"):
+			collider.interact(self)

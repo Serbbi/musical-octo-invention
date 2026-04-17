@@ -1,3 +1,14 @@
+ColorRect
 MeshInstance3D
+StaticBody3D
+RayCast3D
+Control
+CanvasLayer
+GridContainer
+ItemList
+MarginContainer
+PanelContainer
+Label
+TextureRect
 Node3D
 DirectionalLight3D

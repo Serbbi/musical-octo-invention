@@ -1,3 +1,9 @@
-res://addons/proto_controller/proto_controller.tscn
+res://tiles.tscn
 res://tiles.tres
+res://test inv.tres
+res://cube_2.gd
+res://main.gd
 res://addons/proto_controller/proto_controller.gd
+res://addons/proto_controller/proto_controller.tscn
+res://grid_map.gd
+res://main.tscn

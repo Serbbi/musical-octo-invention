@@ -1,12 +1,30 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764947855
+::res://::1776442120
+Cat.glb::PackedScene::2992527709698226326::1765649699::1765649830::1::::<><><>0<>0<>4c13e202fafeb588e9a4bbde77852424<>res://.godot/imported/Cat.glb-b744c2e9e159898f1b12a5aaa647d36b.scn::
 Cube.glb::PackedScene::1909021675386574986::1764690609::1764691653::1::::<><><>0<>0<>cde51b3f0fbeb821f7d9e06e4df1731a<>res://.godot/imported/Cube.glb-dc5d0025a1c17debcd6525ad30e7d81f.scn::
 icon.svg::CompressedTexture2D::4102805442833295627::1762519757::1764691653::1::::<><><>0<>0<>4d1f5424043ccd8b4fe1d2eb847c6f9f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::1525235017154407302::1764849770::0::1::::<><><>0<>0<><>::uid://c5hb4541lwqtw::::res://tiles.tres<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn
+main.gd::GDScript::1508019222168139071::1770400873::0::1::::<>Node3D<><>0<>0<><>::
+main.tscn::PackedScene::1525235017154407302::1776360580::0::1::::<><><>0<>0<><>::uid://vqq4d3vnxcpr::::res://main.gd<>uid://c5hb4541lwqtw::::res://tiles.tres<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn<>uid://257el4dtn2y1::::res://inventory/inventory.tscn<>uid://bhj2t3kutjav1::::res://inventory/inventory_interface.gd<>uid://fwr6e7oqojga::::res://inventory/slot.tscn<>uid://cwcewswa50kmn::::res://tiles.tscn
 README.md::TextFile::-1::1764691570::0::1::::<><><>0<>0<><>::
-tiles.tres::MeshLibrary::6893071447518337468::1764860951::0::1::::<><><>0<>0<><>::
-tiles.tscn::PackedScene::6321407817815092085::1764691103::0::1::::<><><>0<>0<><>::
+test inv.tres::Resource/InventoryData::3927492786340431602::1776350485::0::1::::<><><>0<>0<><>::uid://bdsirkh5umx3s::::res://inventory/inventory_data.gd<>uid://cflq8ryvmpplp::::res://inventory/slot_data.gd<>uid://43wtmfytvcl::::res://item/items/apple.tres<>uid://bf0nxp4do0icl::::res://item/items/blue book.tres
+tiles.tres::MeshLibrary::6893071447518337468::1776359145::0::1::::<><><>0<>0<><>::
+tiles.tscn::PackedScene::6321407817815092085::1776360299::0::1::::<><><>0<>0<><>::
 ::res://addons/::1764689998
-::res://addons/proto_controller/::1764860951
-proto_controller.gd::GDScript::4952874083666833175::1764860951::0::1::::<>CharacterBody3D<><>0<>0<><>::
-proto_controller.tscn::PackedScene::3717544648773412845::1764860951::0::1::::<><><>0<>0<><>::uid://ccthd3dbjrcl8::::res://addons/proto_controller/proto_controller.gd
+::res://addons/proto_controller/::1776362743
+proto_controller.gd::GDScript::4952874083666833175::1776361232::0::1::::<>CharacterBody3D<><>0<>0<><>::
+proto_controller.tscn::PackedScene::3717544648773412845::1776362743::0::1::::<><><>0<>0<><>::uid://ccthd3dbjrcl8::::res://addons/proto_controller/proto_controller.gd<>uid://bv7rh5vl7k12e::::res://test inv.tres
+::res://inventory/::1770748348
+inventory.gd::GDScript::4017062028013739611::1770742158::0::1::::<>PanelContainer<><>0<>0<><>::
+inventory.tscn::PackedScene::1958980820511233390::1770398791::0::1::::<><><>0<>0<><>::uid://bxh5oo7puxgop::::res://inventory/inventory.gd
+inventory_data.gd::GDScript::2634662646056210118::1770748173::0::1::::InventoryData<>Resource<><>0<>0<><>::
+inventory_interface.gd::GDScript::2897996764871054812::1770748348::0::1::::<>Control<><>0<>0<><>::
+slot.gd::GDScript::6339164935078580079::1770743665::0::1::::<>PanelContainer<><>0<>0<><>::
+slot.tscn::PackedScene::397448337452738720::1770741372::0::1::::<><><>0<>0<><>::uid://cwk0edc7fako2::::res://inventory/slot.gd
+slot_data.gd::GDScript::5147525074897192217::1770747119::0::1::::SlotData<>Resource<><>0<>0<><>::
+::res://item/::1770395725
+apple-3155.png::CompressedTexture2D::4223412916730660054::1770395644::1770395644::1::::<><><>0<>0<>f75eaa795e8f040ea97e1c8522c834c8<>res://.godot/imported/apple-3155.png-32eafe4fb9cc1b0b28cbc0c93cfc5988.ctex::
+blue-book-4997.png::CompressedTexture2D::8048402408012976431::1770395680::1770395680::1::::<><><>0<>0<>2c371adb0c77466fa7a4b26041484a4a<>res://.godot/imported/blue-book-4997.png-c80881c6c4c1618560d9f33af823e240.ctex::
+item_data.gd::GDScript::698388868296000096::1770395160::0::1::::ItemData<>Resource<><>0<>0<><>::
+::res://item/items/::1770395927
+apple.tres::Resource/ItemData::61607334872428251::1770395927::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://b1f381x881aig::::res://item/apple-3155.png
+blue book.tres::Resource/ItemData::2789805572706121143::1770395927::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://dmwyanu0tq0o6::::res://item/blue-book-4997.png

@@ -1,18 +1,59 @@
-[gd_scene load_steps=3 format=3 uid="uid://vy3nr71u80p3"]
+[gd_scene load_steps=9 format=3 uid="uid://vy3nr71u80p3"]
 
+[ext_resource type="Script" uid="uid://vqq4d3vnxcpr" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="MeshLibrary" uid="uid://c5hb4541lwqtw" path="res://tiles.tres" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://d23olpcxe2en8" path="res://grid_map.gd" id="3_5vw27"]
+[ext_resource type="PackedScene" uid="uid://257el4dtn2y1" path="res://inventory/inventory.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://bhj2t3kutjav1" path="res://inventory/inventory_interface.gd" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://fwr6e7oqojga" path="res://inventory/slot.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cwcewswa50kmn" path="res://tiles.tscn" id="7_272bh"]
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_1bvp3")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_ig7tw")
+collision_layer = 5
 data = {
-"cells": PackedInt32Array(65535, 65535, 0, 65535, 65534, 0, 65535, 65533, 0, 65535, 65532, 0, 65535, 65531, 0, 65535, 65530, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 65535, 0, 0, 65534, 0, 0, 65533, 0, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 0, 0, 1, 65535, 0, 0, 0, 0, 65532, 65535, 0, 65532, 65534, 0, 65532, 65533, 0, 65532, 65532, 0, 65532, 65531, 0, 65533, 65531, 0, 65533, 65530, 0, 65534, 65530, 0, 65534, 65531, 0, 65533, 65532, 0, 65533, 65533, 0, 65533, 65534, 0, 65533, 65535, 0, 65534, 65535, 0, 65534, 65534, 0, 65534, 65533, 0, 65534, 65532, 0, 1, 65534, 0, 1, 65533, 0, 1, 65531, 0, 1, 65530, 0, 1, 65529, 0, 2, 65529, 0, 2, 65530, 0, 2, 65531, 0, 1, 65532, 0, 2, 65532, 0, 2, 65533, 0, 2, 65534, 0, 2, 65535, 0, 2, 0, 0, 2, 1, 0, 1, 1, 0, 1, 2, 0, 0, 2, 0, 65535, 2, 0, 65534, 2, 0, 65533, 2, 0, 65532, 2, 0, 2, 2, 0)
+"cells": PackedInt32Array(65535, 65535, 0, 65535, 65534, 0, 65535, 65533, 0, 65535, 65532, 0, 65535, 65531, 0, 65535, 65530, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 65535, 0, 0, 65534, 0, 0, 65533, 0, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 0, 0, 1, 65535, 0, 0, 0, 0, 65532, 65535, 0, 65532, 65534, 0, 65532, 65533, 0, 65532, 65532, 0, 65532, 65531, 0, 65533, 65531, 0, 65533, 65530, 0, 65534, 65530, 0, 65534, 65531, 0, 65533, 65532, 0, 65533, 65533, 0, 65533, 65534, 0, 65533, 65535, 0, 65534, 65535, 0, 65534, 65534, 0, 65534, 65533, 0, 65534, 65532, 0, 1, 65534, 0, 1, 65533, 0, 1, 65531, 0, 1, 65530, 0, 1, 65529, 0, 2, 65529, 0, 2, 65530, 0, 2, 65531, 0, 1, 65532, 0, 2, 65532, 0, 2, 65533, 0, 2, 65534, 0, 2, 65535, 0, 2, 0, 0, 2, 1, 0, 1, 1, 0, 1, 2, 0, 0, 2, 0, 65535, 2, 0, 65534, 2, 0, 65533, 2, 0, 65532, 2, 0, 2, 2, 0, 65538, 65531, 1441792, 65537, 65531, 1441792, 65536, 65531, 1441792, 131071, 65531, 1441792)
 }
+script = ExtResource("3_5vw27")
+metadata/_editor_floor_ = Vector3(0, 1, 0)
 
 [node name="ProtoController" parent="." instance=ExtResource("2_0xm2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.6052245, 0.79605484, 0, -0.79605484, 0.6052245, 0, 18.14602, 0)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="InventoryInterface" type="Control" parent="UI"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_lquwl")
+
+[node name="PlayerInventory" parent="UI/InventoryInterface" instance=ExtResource("3_h2yge")]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 50.0
+
+[node name="GrabbedSlot" parent="UI/InventoryInterface" instance=ExtResource("6_7mycd")]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 266.0
+offset_bottom = 266.0
+
+[node name="Tiles" parent="." instance=ExtResource("7_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, -3)
