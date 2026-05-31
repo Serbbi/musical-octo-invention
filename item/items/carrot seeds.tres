@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SeedItemData" load_steps=4 format=3 uid="uid://caova4tbck5hp"]
+
+[ext_resource type="Script" uid="uid://guwcxsae1m8a" path="res://item/seed_item_data.gd" id="1_m5dt3"]
+[ext_resource type="PackedScene" uid="uid://d0dkwokff1pnw" path="res://plants/carrot/carrot.tscn" id="1_nm2s5"]
+[ext_resource type="Texture2D" uid="uid://cdfh7ekxgm5er" path="res://item/seed-bag.png" id="2_0t8jx"]
+
+[resource]
+script = ExtResource("1_m5dt3")
+plant_scene = ExtResource("1_nm2s5")
+name = "Carrot Seeds"
+stackable = true
+texture = ExtResource("2_0t8jx")
+metadata/_custom_type_script = "uid://guwcxsae1m8a"

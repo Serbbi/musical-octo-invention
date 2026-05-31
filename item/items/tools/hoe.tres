@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bqupkf5eu3av1"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_x31ne"]
+[ext_resource type="Texture2D" uid="uid://dllysjvw42fgb" path="res://item/items/tools/hoe.png" id="2_l2xer"]
+
+[resource]
+script = ExtResource("1_x31ne")
+name = "Hoe"
+description = "Used to till soil."
+texture = ExtResource("2_l2xer")
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"

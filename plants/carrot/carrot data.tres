@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=3 format=3 uid="uid://cc4w5h0fqjan4"]
+
+[ext_resource type="Script" uid="uid://dee08wu7uknoq" path="res://plants/plant_data.gd" id="1_ujc1s"]
+[ext_resource type="Resource" uid="uid://chan1t8wec4vj" path="res://item/items/carrot.tres" id="2_nml0o"]
+
+[resource]
+script = ExtResource("1_ujc1s")
+growth_time = 1.0
+harvest_item = ExtResource("2_nml0o")
+metadata/_custom_type_script = "uid://dee08wu7uknoq"

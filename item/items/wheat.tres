@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://w2m3wo21nv3b"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_jl33g"]
+[ext_resource type="Texture2D" uid="uid://dbv3l78ntsf37" path="res://item/wheat.png" id="2_as33l"]
+
+[resource]
+script = ExtResource("1_jl33g")
+name = "Wheat"
+stackable = true
+texture = ExtResource("2_as33l")
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"

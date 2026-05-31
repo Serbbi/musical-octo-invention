@@ -50,6 +50,7 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
+var selected_hotbar_index: int = 0
 
 ## IMPORTANT REFERENCES
 @onready var collider: CollisionShape3D = $Collider
@@ -62,6 +63,9 @@ func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = $CameraController.rotation.x
+	
+	var hotbar = get_node("../UI/HotBarInventory") # adjust path
+	hotbar.hot_bar_select.connect(_on_hotbar_selected)
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
@@ -184,7 +188,24 @@ func check_input_mappings():
 		can_freefly = false
 
 func interact() -> void:
+	var item = get_selected_item()
+	
 	if interact_ray.is_colliding():
 		var collider = interact_ray.get_collider()
-		if collider.has_method("interact"):
-			collider.interact(self)
+
+		if collider.interactable:
+			var success = collider.interactable.interact(self, item)
+			
+			if success:
+				inventory_data.remove_item(selected_hotbar_index, 1)
+			
+func _on_hotbar_selected(index: int) -> void:
+	selected_hotbar_index = index
+	print("Selected slot:", index)
+
+func get_selected_item() -> ItemData:
+	var slot_data =  inventory_data.slot_datas[selected_hotbar_index]
+	if slot_data:
+		return slot_data.item_data
+		
+	return null

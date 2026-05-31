@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://8y71lwoo2g2x"]
+
+[ext_resource type="PackedScene" uid="uid://foe2jyhnplg6" path="res://plants/soil mound.glb" id="1_hhcv2"]
+[ext_resource type="Script" uid="uid://bl1bfdv5v27vw" path="res://plants/soil_mound.gd" id="2_nfhsw"]
+[ext_resource type="Script" uid="uid://cs2am220hwdpk" path="res://plants/soil mound static body.gd" id="3_xwm6j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhcv2"]
+
+[node name="soil mound" instance=ExtResource("1_hhcv2")]
+script = ExtResource("2_nfhsw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" node_paths=PackedStringArray("interactable")]
+collision_layer = 5
+collision_mask = 0
+script = ExtResource("3_xwm6j")
+interactable = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0"]
+transform = Transform3D(2.042, 0, 0, 0, 0.375, 0, 0, 0, 1.915, 0, 0.16810608, 0)
+shape = SubResource("BoxShape3D_hhcv2")
+
+[node name="PlantSpawnPoint" type="Marker3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

@@ -1,9 +1,19 @@
-res://tiles.tscn
-res://tiles.tres
+res://plants/carrot/carrot.tscn
 res://test inv.tres
-res://cube_2.gd
-res://main.gd
-res://addons/proto_controller/proto_controller.gd
-res://addons/proto_controller/proto_controller.tscn
-res://grid_map.gd
+res://item/items/wheat seeds.tres
+res://plants/wheat/wheat.tscn
+res://plants/wheat/wheat_data.tres
+res://plants/cabbage/cabbage.tscn
+res://plants/cabbage/cabbage data.tres
+res://item/items/cabbage.tres
+res://item/items/cabbage seeds.tres
+res://plants/plant static body.gd
+res://plants/potato/potato.tscn
+res://plants/potato/potato data.tres
+res://item/items/potato.tres
+res://item/items/potato seeds.tres
 res://main.tscn
+res://item/items/tools/hoe.tres
+res://terrain.tscn
+res://terrain.gd
+res://terrain static body.gd

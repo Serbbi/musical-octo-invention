@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlantData" load_steps=3 format=3 uid="uid://1y7y53xkgyyv"]
+
+[ext_resource type="Script" uid="uid://dee08wu7uknoq" path="res://plants/plant_data.gd" id="1_e04x6"]
+[ext_resource type="Resource" uid="uid://56r0wskkomfs" path="res://item/items/potato.tres" id="1_erjh4"]
+
+[resource]
+script = ExtResource("1_e04x6")
+growth_time = 1.0
+harvest_item = ExtResource("1_erjh4")
+harvest_amount = 3
+metadata/_custom_type_script = "uid://dee08wu7uknoq"

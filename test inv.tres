@@ -1,14 +1,35 @@
-[gd_resource type="Resource" script_class="InventoryData" load_steps=9 format=3 uid="uid://bv7rh5vl7k12e"]
+[gd_resource type="Resource" script_class="InventoryData" load_steps=17 format=3 uid="uid://bv7rh5vl7k12e"]
 
 [ext_resource type="Script" uid="uid://bdsirkh5umx3s" path="res://inventory/inventory_data.gd" id="1_4gheq"]
 [ext_resource type="Script" uid="uid://cflq8ryvmpplp" path="res://inventory/slot_data.gd" id="2_bkdvx"]
+[ext_resource type="Resource" uid="uid://bqupkf5eu3av1" path="res://item/items/tools/hoe.tres" id="3_i88m2"]
 [ext_resource type="Resource" uid="uid://43wtmfytvcl" path="res://item/items/apple.tres" id="3_txxfk"]
 [ext_resource type="Resource" uid="uid://bf0nxp4do0icl" path="res://item/items/blue book.tres" id="4_7bcyg"]
+[ext_resource type="Resource" uid="uid://c017a3l03heev" path="res://item/items/potato seeds.tres" id="4_66nid"]
+[ext_resource type="Resource" uid="uid://cha70hp0rcukj" path="res://item/items/cabbage seeds.tres" id="4_d8vod"]
+[ext_resource type="Resource" uid="uid://caova4tbck5hp" path="res://item/items/carrot seeds.tres" id="4_jmdcg"]
+[ext_resource type="Resource" uid="uid://cbjvu4513k64v" path="res://item/items/wheat seeds.tres" id="6_jmdcg"]
 
 [sub_resource type="Resource" id="Resource_jmdcg"]
 script = ExtResource("2_bkdvx")
-item_data = ExtResource("3_txxfk")
-quantity = 5
+item_data = ExtResource("3_i88m2")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_aqvw4"]
+script = ExtResource("2_bkdvx")
+item_data = ExtResource("4_66nid")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_i88m2"]
+script = ExtResource("2_bkdvx")
+item_data = ExtResource("4_d8vod")
+quantity = 4
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_66nid"]
+script = ExtResource("2_bkdvx")
+item_data = ExtResource("4_jmdcg")
+quantity = 3
 metadata/_custom_type_script = "uid://cflq8ryvmpplp"
 
 [sub_resource type="Resource" id="Resource_d8vod"]
@@ -18,7 +39,8 @@ metadata/_custom_type_script = "uid://cflq8ryvmpplp"
 
 [sub_resource type="Resource" id="Resource_txxfk"]
 script = ExtResource("2_bkdvx")
-item_data = ExtResource("4_7bcyg")
+item_data = ExtResource("6_jmdcg")
+quantity = 2
 metadata/_custom_type_script = "uid://cflq8ryvmpplp"
 
 [sub_resource type="Resource" id="Resource_7bcyg"]
@@ -29,5 +51,5 @@ metadata/_custom_type_script = "uid://cflq8ryvmpplp"
 
 [resource]
 script = ExtResource("1_4gheq")
-slot_datas = Array[ExtResource("2_bkdvx")]([SubResource("Resource_jmdcg"), null, null, null, null, SubResource("Resource_d8vod"), SubResource("Resource_txxfk"), SubResource("Resource_7bcyg"), null, null, null, null, null, null, null, null, null, null])
+slot_datas = Array[ExtResource("2_bkdvx")]([SubResource("Resource_jmdcg"), SubResource("Resource_aqvw4"), SubResource("Resource_i88m2"), SubResource("Resource_66nid"), SubResource("Resource_d8vod"), SubResource("Resource_txxfk"), SubResource("Resource_7bcyg"), null, null, null, null, null, null, null, null, null, null, null])
 metadata/_custom_type_script = "uid://bdsirkh5umx3s"
