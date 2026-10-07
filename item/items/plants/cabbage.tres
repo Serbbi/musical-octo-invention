@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b2b0yhjdgpo8b"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_pptar"]
+[ext_resource type="Texture2D" uid="uid://0bf0mooajsoi" path="res://item/items/plants/cabbage.png" id="2_2ju7c"]
+
+[resource]
+script = ExtResource("1_pptar")
+name = "Cabbage"
+description = "It's what rabbits eat."
+stackable = true
+texture = ExtResource("2_2ju7c")
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"

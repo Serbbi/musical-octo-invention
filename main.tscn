@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://vy3nr71u80p3"]
+[gd_scene load_steps=12 format=3 uid="uid://vy3nr71u80p3"]
 
 [ext_resource type="Script" uid="uid://vqq4d3vnxcpr" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0xm2m"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://c15p15o3ej72p" path="res://inventory/hot_bar_inventory.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://fwr6e7oqojga" path="res://inventory/slot.tscn" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://8y71lwoo2g2x" path="res://plants/soil_mound.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://cfgeppdgp2hmp" path="res://shops/farm_shop/farm_shop_interface.tscn" id="7_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cqnlmsmsr7r76" path="res://shops/farm_shop/farm_shop.tscn" id="9_kek77"]
+[ext_resource type="Script" uid="uid://b31eaf86u1q4c" path="res://managers/UI_manager.gd" id="11_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bbqv5egvv5d0p" path="res://terrain.tscn" id="11_efxa6"]
 
 [node name="Main" type="Node3D"]
@@ -43,10 +46,13 @@ self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 10.0
 offset_top = 10.0
-offset_right = 266.0
-offset_bottom = 266.0
+offset_right = 90.0
+offset_bottom = 90.0
 
 [node name="HotBarInventory" parent="UI" instance=ExtResource("6_5vw27")]
+
+[node name="FarmShopInterface" parent="UI" instance=ExtResource("7_4c57u")]
+visible = false
 
 [node name="soil mound" parent="." instance=ExtResource("6_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
@@ -55,3 +61,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.846064, 0, -3)
 
 [node name="Terrain" parent="." instance=ExtResource("11_efxa6")]
+
+[node name="Farm_Shop" parent="." instance=ExtResource("9_kek77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.520673)
+
+[node name="UIManager" type="Node" parent="."]
+script = ExtResource("11_dg77c")

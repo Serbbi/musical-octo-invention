@@ -51,6 +51,7 @@ var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
 var selected_hotbar_index: int = 0
+var input_enabled := true
 
 ## IMPORTANT REFERENCES
 @onready var collider: CollisionShape3D = $Collider
@@ -68,6 +69,9 @@ func _ready() -> void:
 	hotbar.hot_bar_select.connect(_on_hotbar_selected)
 
 func _unhandled_input(event: InputEvent) -> void:
+	if not input_enabled:
+		return
+	
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
@@ -77,13 +81,13 @@ func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("inventory"):
 		toggle_inventory.emit()
 	
+	if Input.is_action_just_pressed("interact"):
+		interact()
+		
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
 		rotate_look(event.relative)
-		
-	if Input.is_action_just_pressed("interact"):
-		interact()
-	
+
 
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
@@ -155,12 +159,12 @@ func rotate_look(rot_input: Vector2):
 func capture_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouse_captured = true
-
+	input_enabled = true
 
 func release_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	mouse_captured = false
-
+	input_enabled = false
 
 ## Checks if some Input Actions haven't been created.
 ## Disables functionality accordingly.

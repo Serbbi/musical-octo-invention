@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="ShopData" load_steps=11 format=3 uid="uid://csxe16y0acl4f"]
+
+[ext_resource type="Script" uid="uid://bd0vytjrjwrxo" path="res://shops/shop_data.gd" id="1_fy4d6"]
+[ext_resource type="Script" uid="uid://cflq8ryvmpplp" path="res://inventory/slot_data.gd" id="2_jq8ge"]
+[ext_resource type="Resource" uid="uid://caova4tbck5hp" path="res://item/items/seeds/carrot seeds.tres" id="3_ha5of"]
+[ext_resource type="Resource" uid="uid://c017a3l03heev" path="res://item/items/seeds/potato seeds.tres" id="4_fauuy"]
+[ext_resource type="Resource" uid="uid://cha70hp0rcukj" path="res://item/items/seeds/cabbage seeds.tres" id="5_6ip6o"]
+[ext_resource type="Resource" uid="uid://cbjvu4513k64v" path="res://item/items/seeds/wheat seeds.tres" id="6_nmp1t"]
+
+[sub_resource type="Resource" id="Resource_btpdc"]
+script = ExtResource("2_jq8ge")
+item_data = ExtResource("3_ha5of")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_wch1y"]
+script = ExtResource("2_jq8ge")
+item_data = ExtResource("4_fauuy")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_wc0ki"]
+script = ExtResource("2_jq8ge")
+item_data = ExtResource("5_6ip6o")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[sub_resource type="Resource" id="Resource_06s3u"]
+script = ExtResource("2_jq8ge")
+item_data = ExtResource("6_nmp1t")
+metadata/_custom_type_script = "uid://cflq8ryvmpplp"
+
+[resource]
+script = ExtResource("1_fy4d6")
+slot_datas = Array[ExtResource("2_jq8ge")]([SubResource("Resource_btpdc"), SubResource("Resource_wch1y"), SubResource("Resource_wc0ki"), SubResource("Resource_06s3u")])
+metadata/_custom_type_script = "uid://bd0vytjrjwrxo"

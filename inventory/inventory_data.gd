@@ -61,34 +61,25 @@ func drop_single_slot_data(grabbed_slot_data: SlotData, index: int) -> SlotData:
 func on_slot_clicked(index: int, button: int) -> void:
 	inventory_interact.emit(self, index, button)
 	
-func add_item(item: ItemData, amount: int) -> void:
-	if !item.stackable:
-		add_item_new_slot(item, amount)
-	else:
-		var inv_slot: SlotData = null
+func add_item(item: ItemData, amount: int) -> bool:
+	if item.stackable:
 		for slot in slot_datas:
-			if slot and slot.item_data.name == item.name:
-				inv_slot = slot
-				break
-		if !inv_slot:
-			add_item_new_slot(item, amount)
-		else:
-			inv_slot.quantity += amount
-			inventory_updated.emit(self)
+			if slot and slot.item_data == item and slot.quantity + amount <= SlotData.MAX_STACK_SIZE:
+				slot.quantity += amount
+				inventory_updated.emit(self)
+				return true
+	return add_item_new_slot(item, amount)
 
-func add_item_new_slot(item: ItemData, amount: int) -> void:
-	var free_index = 0
-	for slot in slot_datas:
-		if slot:
-			free_index += 1
-		else:
-			break
-	
+func add_item_new_slot(item: ItemData, amount: int) -> bool:
+	var free_index = slot_datas.find(null)
+	if free_index == -1:
+		return false
 	var slot_data = SlotData.new()
 	slot_data.item_data = item
 	slot_data.quantity = amount
 	slot_datas[free_index] = slot_data
 	inventory_updated.emit(self)
+	return true
 
 func remove_item(index: int, amount: int = 1) -> bool:
 	var slot = slot_datas[index]

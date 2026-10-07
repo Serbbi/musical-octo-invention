@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://chan1t8wec4vj"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_obq5j"]
+[ext_resource type="Texture2D" uid="uid://dljc2a7ge3pb2" path="res://item/items/plants/carrot.png" id="2_n2j0x"]
+
+[resource]
+script = ExtResource("1_obq5j")
+name = "Carrot"
+stackable = true
+texture = ExtResource("2_n2j0x")
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"

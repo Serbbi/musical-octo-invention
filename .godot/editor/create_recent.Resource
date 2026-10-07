@@ -1,3 +1,4 @@
+ShopData
 ItemData
 SeedItemData
 PlantData

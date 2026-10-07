@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://56r0wskkomfs"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_yekxv"]
+[ext_resource type="Texture2D" uid="uid://cev5bo1y22msd" path="res://item/items/plants/potato.png" id="2_fnyqi"]
+
+[resource]
+script = ExtResource("1_yekxv")
+name = "Potato"
+description = "POTATO potato"
+stackable = true
+texture = ExtResource("2_fnyqi")
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"

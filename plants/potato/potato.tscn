@@ -181,19 +181,18 @@ mesh = SubResource("ArrayMesh_5fqf3")
 skeleton = NodePath("")
 
 [node name="Stage1" type="MeshInstance3D" parent="Stages"]
-transform = Transform3D(0.2341154, 0, 0, 0, 0.2341154, 0, 0, 0, 0.2341154, 0, 0, 0)
-visible = false
+transform = Transform3D(0.144, 0, 0, 0, 0.144, 0, 0, 0, 0.144, 0, 0, 0)
 mesh = SubResource("ArrayMesh_inxn1")
 skeleton = NodePath("")
 
 [node name="Stage2" type="MeshInstance3D" parent="Stages"]
-transform = Transform3D(0.5512135, 0, 0, 0, 0.5512135, 0, 0, 0, 0.5512135, 0, 0, 0)
+transform = Transform3D(0.306, 0, 0, 0, 0.306, 0, 0, 0, 0.306, 0, 0, 0)
 visible = false
 mesh = SubResource("ArrayMesh_ti4xc")
 skeleton = NodePath("")
 
 [node name="Stage3" type="MeshInstance3D" parent="Stages"]
-transform = Transform3D(0.5512135, 0, 0, 0, 0.5512135, 0, 0, 0, 0.5512135, 0, 0, 0)
+transform = Transform3D(0.266, 0, 0, 0, 0.266, 0, 0, 0, 0.266, 0, 0, 0)
 visible = false
 mesh = SubResource("ArrayMesh_4b8io")
 skeleton = NodePath("")

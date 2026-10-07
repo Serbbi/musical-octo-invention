@@ -1,23 +1,26 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780223046
+::res://::1791399111
 Cat.glb::PackedScene::2992527709698226326::1765649699::1765649830::1::::<><><>0<>0<>4c13e202fafeb588e9a4bbde77852424<>res://.godot/imported/Cat.glb-b744c2e9e159898f1b12a5aaa647d36b.scn::
 Cube.glb::PackedScene::1909021675386574986::1764690609::1764691653::1::::<><><>0<>0<>cde51b3f0fbeb821f7d9e06e4df1731a<>res://.godot/imported/Cube.glb-dc5d0025a1c17debcd6525ad30e7d81f.scn::
 cube_2.gd::GDScript::5595688500495776193::1776442527::0::1::::<>Node3D<><>0<>0<><>::
+farm shop.glb::PackedScene::3714088050081989706::1790528317::1790528317::1::::<><><>0<>0<>e5af04512f97cbdbe0e40520bc641bdf<>res://.godot/imported/farm shop.glb-16dfc0ae266b2f4be69feabb66d7019d.scn::
 fps.gd::GDScript::7442224794506879619::1777029917::0::1::::<>Control<><>0<>0<><>::
 fps.tscn::PackedScene::9073438750174585988::1777030099::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4102805442833295627::1762519757::1764691653::1::::<><><>0<>0<>4d1f5424043ccd8b4fe1d2eb847c6f9f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.gd::GDScript::1508019222168139071::1776600392::0::1::::<>Node3D<><>0<>0<><>::
-main.tscn::PackedScene::1525235017154407302::1780223046::0::1::::<><><>0<>0<><>::uid://vqq4d3vnxcpr::::res://main.gd<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn<>uid://257el4dtn2y1::::res://inventory/inventory.tscn<>uid://bhj2t3kutjav1::::res://inventory/inventory_interface.gd<>uid://c15p15o3ej72p::::res://inventory/hot_bar_inventory.tscn<>uid://fwr6e7oqojga::::res://inventory/slot.tscn<>uid://8y71lwoo2g2x::::res://plants/soil_mound.tscn<>uid://bbqv5egvv5d0p::::res://terrain.tscn
+main.gd::GDScript::1508019222168139071::1791137445::0::1::::<>Node3D<><>0<>0<><>::
+main.tscn::PackedScene::1525235017154407302::1790878031::0::1::::<><><>0<>0<><>::uid://vqq4d3vnxcpr::::res://main.gd<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn<>uid://257el4dtn2y1::::res://inventory/inventory.tscn<>uid://bhj2t3kutjav1::::res://inventory/inventory_interface.gd<>uid://c15p15o3ej72p::::res://inventory/hot_bar_inventory.tscn<>uid://fwr6e7oqojga::::res://inventory/slot.tscn<>uid://8y71lwoo2g2x::::res://plants/soil_mound.tscn<>uid://cfgeppdgp2hmp::::res://shops/farm_shop/farm_shop_interface.tscn<>uid://cqnlmsmsr7r76::::res://shops/farm_shop/farm_shop.tscn<>uid://b31eaf86u1q4c::::res://managers/UI_manager.gd<>uid://bbqv5egvv5d0p::::res://terrain.tscn
 README.md::TextFile::-1::1764691570::0::1::::<><><>0<>0<><>::
 terrain3d-01-01.res::Terrain3DRegion::8564869608440200961::1776592709::0::1::::<><><>0<>0<><>::
 terrain3d-01_00.res::Terrain3DRegion::5457658982547166436::1776592709::0::1::::<><><>0<>0<><>::
 terrain3d_00-01.res::Terrain3DRegion::47314630241333485::1776592709::0::1::::<><><>0<>0<><>::
 terrain3d_00_00.res::Terrain3DRegion::7582864266763240969::1776592709::0::1::::<><><>0<>0<><>::
-terrain.tscn::PackedScene::2490968422406949965::1777031073::0::1::::<><><>0<>0<><>::
-test inv.tres::Resource/InventoryData::3927492786340431602::1780220093::0::1::::<><><>0<>0<><>::uid://bdsirkh5umx3s::::res://inventory/inventory_data.gd<>uid://cflq8ryvmpplp::::res://inventory/slot_data.gd<>uid://43wtmfytvcl::::res://item/items/apple.tres<>uid://bf0nxp4do0icl::::res://item/items/blue book.tres<>uid://c017a3l03heev::::res://item/items/potato seeds.tres<>uid://cha70hp0rcukj::::res://item/items/cabbage seeds.tres<>uid://caova4tbck5hp::::res://item/items/carrot seeds.tres<>uid://cbjvu4513k64v::::res://item/items/wheat seeds.tres
+terrain static body.gd::GDScript::5299581720537124492::1780223418::0::1::::<>StaticBody3D<><>0<>0<><>::
+terrain.gd::GDScript::2125128722905909156::1780223927::0::1::::Terrain<>Node3D<><>0<>0<><>::
+terrain.tscn::PackedScene::2490968422406949965::1780223927::0::1::::<><><>0<>0<><>::uid://5jota41ldifs::::res://terrain.gd<>uid://chrflpgbdjojk::::res://terrain static body.gd
+test inv.tres::Resource/InventoryData::3927492786340431602::1791318081::0::1::::<><><>0<>0<><>::uid://bdsirkh5umx3s::::res://inventory/inventory_data.gd<>uid://cflq8ryvmpplp::::res://inventory/slot_data.gd<>uid://bqupkf5eu3av1::::res://item/items/tools/hoe.tres<>uid://43wtmfytvcl::::res://item/items/apple.tres<>uid://bf0nxp4do0icl::::res://item/items/blue book.tres<>uid://c017a3l03heev::::res://item/items/seeds/potato seeds.tres<>uid://cha70hp0rcukj::::res://item/items/seeds/cabbage seeds.tres<>uid://caova4tbck5hp::::res://item/items/seeds/carrot seeds.tres<>uid://cbjvu4513k64v::::res://item/items/seeds/wheat seeds.tres
 ::res://addons/::1776520953
-::res://addons/proto_controller/::1779544515
-proto_controller.gd::GDScript::4952874083666833175::1779542238::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://addons/proto_controller/::1790878458
+proto_controller.gd::GDScript::4952874083666833175::1790878458::0::1::::<>CharacterBody3D<><>0<>0<><>::
 proto_controller.tscn::PackedScene::3717544648773412845::1779544515::0::1::::<><><>0<>0<><>::uid://ccthd3dbjrcl8::::res://addons/proto_controller/proto_controller.gd<>uid://bv7rh5vl7k12e::::res://test inv.tres
 ::res://addons/terrain_3d/::1776520943
 LICENSE.txt::TextFile::-1::1751025570::0::1::::<><><>0<>0<><>::
@@ -93,52 +96,60 @@ region_mover.gd::GDScript::3312089740165276770::1751025570::0::1::::<>Terrain3D<
 ::res://addons/terrain_3d/utils/::1776520943
 terrain_3d_objects.gd::GDScript::7256511001583860152::1751025570::0::1::::Terrain3DObjects<>Node3D<><>0<>1<><>::
 transform_changed_notifier.gd::GDScript::5546349407322732584::1751025570::0::1::::<>Node3D<><>0<>1<><>::
-::res://inventory/::1779543295
-hot_bar_inventory.gd::GDScript::7112746997314054437::1779295044::0::1::::<>PanelContainer<><>0<>0<><>::
-hot_bar_inventory.tscn::PackedScene::6660641418735556653::1777124082::0::1::::<><><>0<>0<><>::uid://c8lp5y4lhpo4l::::res://inventory/hot_bar_inventory.gd
+::res://inventory/::1791317603
+hot_bar_inventory.gd::GDScript::7112746997314054437::1790878049::0::1::::<>PanelContainer<><>0<>0<><>::
+hot_bar_inventory.tscn::PackedScene::6660641418735556653::1791137445::0::1::::<><><>0<>0<><>::uid://c8lp5y4lhpo4l::::res://inventory/hot_bar_inventory.gd
 inventory.gd::GDScript::4017062028013739611::1770742158::0::1::::<>PanelContainer<><>0<>0<><>::
-inventory.tscn::PackedScene::1958980820511233390::1770398791::0::1::::<><><>0<>0<><>::uid://bxh5oo7puxgop::::res://inventory/inventory.gd
-inventory_data.gd::GDScript::2634662646056210118::1779543295::0::1::::InventoryData<>Resource<><>0<>0<><>::
-inventory_interface.gd::GDScript::2897996764871054812::1770748348::0::1::::<>Control<><>0<>0<><>::
+inventory.tscn::PackedScene::1958980820511233390::1791137322::0::1::::<><><>0<>0<><>::uid://bxh5oo7puxgop::::res://inventory/inventory.gd
+inventory_data.gd::GDScript::2634662646056210118::1791137180::0::1::::InventoryData<>Resource<><>0<>0<><>::
+inventory_interface.gd::GDScript::2897996764871054812::1790789700::0::1::::<>Control<><>0<>0<><>::
 slot.gd::GDScript::6339164935078580079::1770743665::0::1::::<>PanelContainer<><>0<>0<><>::
-slot.tscn::PackedScene::397448337452738720::1770741372::0::1::::<><><>0<>0<><>::uid://cwk0edc7fako2::::res://inventory/slot.gd
-slot_data.gd::GDScript::5147525074897192217::1770747119::0::1::::SlotData<>Resource<><>0<>0<><>::
-::res://item/::1780219925
+slot.tscn::PackedScene::397448337452738720::1791317603::0::1::::<><><>0<>0<><>::uid://cwk0edc7fako2::::res://inventory/slot.gd
+slot_data.gd::GDScript::5147525074897192217::1790533011::0::1::::SlotData<>Resource<><>0<>0<><>::
+::res://item/::1791317027
 apple-3155.png::CompressedTexture2D::4223412916730660054::1770395644::1770395644::1::::<><><>0<>0<>f75eaa795e8f040ea97e1c8522c834c8<>res://.godot/imported/apple-3155.png-32eafe4fb9cc1b0b28cbc0c93cfc5988.ctex::
 blue-book-4997.png::CompressedTexture2D::8048402408012976431::1770395680::1770395680::1::::<><><>0<>0<>2c371adb0c77466fa7a4b26041484a4a<>res://.godot/imported/blue-book-4997.png-c80881c6c4c1618560d9f33af823e240.ctex::
-cabbage.png::CompressedTexture2D::3764746021673561515::1780218062::1780218063::1::::<><><>0<>0<>66245a41fb7d213331d4e8e30abdbff4<>res://.godot/imported/cabbage.png-a4a69cfc8faf70df992c46a638cd487e.ctex::
-carrot.png::CompressedTexture2D::9020170442460357967::1779210828::1779210828::1::::<><><>0<>0<>b24e44fcecba9d80a202ba22895b735f<>res://.godot/imported/carrot.png-4bc2d82ccdf682e42e27cb341fbe2e37.ctex::
 item_data.gd::GDScript::698388868296000096::1770395160::0::1::::ItemData<>Resource<><>0<>0<><>::
-potato.png::CompressedTexture2D::5206971287817618113::1780219925::1780219925::1::::<><><>0<>0<>abffd80636f72940be13479e571e663d<>res://.godot/imported/potato.png-76c82aaeb09f0cd6681e1db3c9e78373.ctex::
-seed-bag.png::CompressedTexture2D::4994212178019904049::1776606635::1776606636::1::::<><><>0<>0<>682e7c880e90d7cd51a4bb3e3ef2d730<>res://.godot/imported/seed-bag.png-1f203de17478e402756b3c861582139f.ctex::
 seed_item_data.gd::GDScript::463761198187976866::1779214391::0::1::::SeedItemData<>ItemData<><>0<>0<><>::
 shovel.png::CompressedTexture2D::5671205913814760969::1779540831::1779540832::1::::<><><>0<>0<>0870f74e38fe53dc74c05ede6a3bb9db<>res://.godot/imported/shovel.png-1b00e7c0fb6141c1d086a2cc07e0eb5a.ctex::
-wheat.png::CompressedTexture2D::7274524279425521164::1779210828::1779210828::1::::<><><>0<>0<>99fa125a2c274864e3280f14efb34c4a<>res://.godot/imported/wheat.png-957a3bcae205d996773c7749698b0a8f.ctex::
-::res://item/items/::1780223008
+::res://item/items/::1791316838
 apple.tres::Resource/ItemData::61607334872428251::1776606732::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://b1f381x881aig::::res://item/apple-3155.png
 blue book.tres::Resource/ItemData::2789805572706121143::1770395927::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://dmwyanu0tq0o6::::res://item/blue-book-4997.png
-carrot seeds.tres::Resource/SeedItemData::4803019265368108869::1777130779::0::1::::<><><>0<>0<><>::uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://d0dkwokff1pnw::::res://plants/carrot/carrot.tscn<>uid://cdfh7ekxgm5er::::res://item/seed-bag.png
-carrot.tres::Resource/ItemData::5265000074327156119::1779543664::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://d1ro5ib8tyjr0::::res://item/carrot.png
-cabbage.tres::Resource/ItemData::4285145005258536211::1780218114::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://btvw21nbipqel::::res://item/cabbage.png
-cabbage seeds.tres::Resource/SeedItemData::5266151253462800685::1780218245::0::1::::<><><>0<>0<><>::uid://d2nskcia63wib::::res://plants/cabbage/cabbage.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://b0xivkf4jy20o::::res://plants/cabbage/cabbage stage 0_cabbage texture.png
-potato.tres::Resource/ItemData::2170739037029941436::1780219957::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://cggkb6fjamw6l::::res://item/potato.png
-potato seeds.tres::Resource/SeedItemData::6583180712531328261::1780220009::0::1::::<><><>0<>0<><>::uid://b0b1v0nl57l3::::res://plants/potato/potato.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://iy84ftvkmbgf::::res://plants/potato/potato stage 1_potato stage 3 texture.png
-wheat seeds.tres::Resource/SeedItemData::4862921954277421115::1780216211::0::1::::<><><>0<>0<><>::uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://dxca0bcxtewiv::::res://plants/wheat/wheat.tscn<>uid://nhsdirgqo0md::::res://plants/wheat/cuteWheat_wheat texture.png
-wheat.tres::Resource/ItemData::1600672543941863413::1779210869::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://dbv3l78ntsf37::::res://item/wheat.png
-::res://item/items/tools/::1780223100
+::res://item/items/plants/::1791317995
+cabbage.png::CompressedTexture2D::1757134351060258612::1791317757::1791317995::1::::<><><>0<>0<>73b44ccd27b158f38da205ab0dd04141<>res://.godot/imported/cabbage.png-7311e711da003f0081f8aa5924bad8d9.ctex::
+cabbage.tres::Resource/ItemData::4285145005258536211::1791316921::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://0bf0mooajsoi::::res://item/items/plants/cabbage.png
+carrot.png::CompressedTexture2D::7950088431017979609::1791317785::1791317995::1::::<><><>0<>0<>5ec37ea4b68c821baf8565104af47bd9<>res://.godot/imported/carrot.png-d489bbd6329a54534eae1ee6a7d531e5.ctex::
+carrot.tres::Resource/ItemData::5265000074327156119::1791316921::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://dljc2a7ge3pb2::::res://item/items/plants/carrot.png
+potato.png::CompressedTexture2D::5098772746969909535::1791317824::1791317995::1::::<><><>0<>0<>2ed0c181bfa2be62373ad475e5e4fa37<>res://.godot/imported/potato.png-64cb2b0ebff4d6f836ccb5f66386313c.ctex::
+potato.tres::Resource/ItemData::2170739037029941436::1791316929::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://cev5bo1y22msd::::res://item/items/plants/potato.png
+wheat.png::CompressedTexture2D::1678672505140336010::1791317892::1791317995::1::::<><><>0<>0<>ca9326f21a44b4a6968aa3a4285ce4f3<>res://.godot/imported/wheat.png-7cdf4ec17340b5d9c9a5d432d70a0b9b.ctex::
+wheat.tres::Resource/ItemData::1600672543941863413::1791316937::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://x6fqxqoy88jm::::res://item/items/plants/wheat.png
+::res://item/items/seeds/::1791317995
+cabbage seeds.tres::Resource/SeedItemData::5266151253462800685::1791317021::0::1::::<><><>0<>0<><>::uid://d2nskcia63wib::::res://plants/cabbage/cabbage.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://cyiar3f3nyxka::::res://item/items/seeds/seed_cabbage.png
+carrot seeds.tres::Resource/SeedItemData::4803019265368108869::1791317021::0::1::::<><><>0<>0<><>::uid://d0dkwokff1pnw::::res://plants/carrot/carrot.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://cw44sopxfvq4u::::res://item/items/seeds/seed_carrot.png
+potato seeds.tres::Resource/SeedItemData::6583180712531328261::1791317021::0::1::::<><><>0<>0<><>::uid://b0b1v0nl57l3::::res://plants/potato/potato.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://cnq8705837by2::::res://item/items/seeds/seed_potato.png
+seed_cabbage.png::CompressedTexture2D::6473920474896201344::1791317724::1791317995::1::::<><><>0<>0<>17a95e87ee24ff805691a79e80b2d2f7<>res://.godot/imported/seed_cabbage.png-b43f65bd7490dc9514b0b943fbf117f5.ctex::
+seed_carrot.png::CompressedTexture2D::6378656578922673222::1791317711::1791317995::1::::<><><>0<>0<>68df5234c69a9f82999669478ca67aec<>res://.godot/imported/seed_carrot.png-94b73df5fc466d5f1d4f90e9b4e41aa6.ctex::
+seed_potato.png::CompressedTexture2D::5720388545877761711::1791317682::1791317995::1::::<><><>0<>0<>e3e39883d49006b0d1f5b84878e400b6<>res://.godot/imported/seed_potato.png-828ff823e48c6c62228645b87dad22f2.ctex::
+seed_wheat.png::CompressedTexture2D::5134383249664343468::1791317478::1791317479::1::::<><><>0<>0<>8aac842a1dc71b9e46d7a4ac9401856a<>res://.godot/imported/seed_wheat.png-b62a297310199541c23c662f41d7dc7e.ctex::
+wheat seeds.tres::Resource/SeedItemData::4862921954277421115::1791317021::0::1::::<><><>0<>0<><>::uid://dxca0bcxtewiv::::res://plants/wheat/wheat.tscn<>uid://guwcxsae1m8a::::res://item/seed_item_data.gd<>uid://bai1lkyxlo10c::::res://item/items/seeds/seed_wheat.png
+::res://item/items/tools/::1780223121
 hoe.png::CompressedTexture2D::7955537344699444489::1780223093::1780223094::1::::<><><>0<>0<>5c65bdbbb66025b839c421908f5cd31a<>res://.godot/imported/hoe.png-71f9743c2551abdd62edc76addab7055.ctex::
-hoe.tres::Resource/ItemData::3551658658983813508::1780223046::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd
+hoe.tres::Resource/ItemData::3551658658983813508::1780223121::0::1::::<><><>0<>0<><>::uid://j7kmlgu1ducu::::res://item/item_data.gd<>uid://dllysjvw42fgb::::res://item/items/tools/hoe.png
 shovel.png::CompressedTexture2D::8608201115721809710::1780223100::1780223100::1::::<><><>0<>0<>5a5709a1bc428377808bb6881bf4a45b<>res://.godot/imported/shovel.png-492899b19e8a08ae44c2d0f706a93353.ctex::
-::res://plants/::1780219130
+::res://managers/::1791136660
+UI_manager.gd::GDScript::4405625310166190540::1791136660::0::1::::UIManager<>Node<><>0<>0<><>::
+::res://plants/::1790620082
+plant static body.gd::GDScript::4736278595302801812::1790620082::0::1::::<>StaticBody3D<><>0<>0<><>::
 plant.gd::GDScript::1365707824938943164::1780215728::0::1::::Plant<>Node3D<><>0<>0<><>::
 plant.tscn::PackedScene::5410218799163532659::1777124338::0::1::::<><><>0<>0<><>::uid://c285a6ym33cgn::::res://plants/carrot/cuteCarrot_carrot texture 64.png
 plant_data.gd::GDScript::7449852980556555312::1779212636::0::1::::PlantData<>Resource<><>0<>0<><>::
-plant static body.gd::GDScript::4736278595302801812::1780218399::0::1::::<>StaticBody3D<><>0<>0<><>::
 soil mound static body.gd::GDScript::6092001642743539476::1779287318::0::1::::<>StaticBody3D<><>0<>0<><>::
 soil mound.glb::PackedScene::380137101274976959::1776592612::1776596369::1::::<><><>0<>0<>fb1e595acd9b758f2a7ee83e4a36121c<>res://.godot/imported/soil mound.glb-e0a86207a474e8199e026d98b730f777.scn::
 soil_mound.gd::GDScript::3212241622682470280::1779542256::0::1::::SoilMound<>Node3D<><>0<>0<><>::
-soil_mound.tscn::PackedScene::2367766892960979901::1779288026::0::1::::<><><>0<>0<><>::uid://foe2jyhnplg6::::res://plants/soil mound.glb<>uid://bl1bfdv5v27vw::::res://plants/soil_mound.gd<>uid://cs2am220hwdpk::::res://plants/soil mound static body.gd
-::res://plants/cabbage/::1780218641
+soil_mound.tscn::PackedScene::2367766892960979901::1790616549::0::1::::<><><>0<>0<><>::uid://foe2jyhnplg6::::res://plants/soil mound.glb<>uid://bl1bfdv5v27vw::::res://plants/soil_mound.gd<>uid://cs2am220hwdpk::::res://plants/soil mound static body.gd
+::res://plants/cabbage/::1791317021
+cabbage data.tres::Resource/PlantData::5281296578600228525::1791316833::0::1::::<><><>0<>0<><>::uid://b2b0yhjdgpo8b::::res://item/items/plants/cabbage.tres<>uid://dee08wu7uknoq::::res://plants/plant_data.gd
 cabbage stage 0.glb::PackedScene::8523376077249885254::1780217650::1780217714::1::::<><><>0<>0<>d27fff62e9c79bc04de7fcc78b045c33<>res://.godot/imported/cabbage stage 0.glb-65df43462f0535612ad960d9a71732f6.scn::uid://b0xivkf4jy20o::::res://plants/cabbage/cabbage stage 0_cabbage texture.png
 cabbage stage 0_cabbage texture.png::CompressedTexture2D::4189146234889573244::1780217651::1780217714::1::::<><><>0<>0<>68a6102ccae169777edf1f154926dcd7<>res://.godot/imported/cabbage stage 0_cabbage texture.png-be168cf0eb22690b77005967662dfc90.s3tc.ctex::
 cabbage stage 1.glb::PackedScene::5270264665587112144::1780217650::1780217714::1::::<><><>0<>0<>67910327d93a139a6042fe2d0365ed1f<>res://.godot/imported/cabbage stage 1.glb-07422adf5bd8b4579a702fd03483d4ef.scn::uid://dic5v2566bhj3::::res://plants/cabbage/cabbage stage 1_cabbage texture.png
@@ -149,10 +160,9 @@ cabbage stage 3.glb::PackedScene::4061252485688214497::1780217650::1780217715::1
 cabbage stage 3_cabbage texture.png::CompressedTexture2D::662767294872134388::1780217652::1780217714::1::::<><><>0<>0<>543553e01f582c828aae3b6a05f02f60<>res://.godot/imported/cabbage stage 3_cabbage texture.png-68a2578ee18116c27ec3642c14fdaeaf.s3tc.ctex::
 cabbage stage 4.glb::PackedScene::5080317067272539431::1780217650::1780217715::1::::<><><>0<>0<>ec5d934b6856c43c1fb952076ff51500<>res://.godot/imported/cabbage stage 4.glb-14af25daa1bd827fbae078cc59348f8c.scn::uid://ci8im2vlak4t::::res://plants/cabbage/cabbage stage 4_cabbage texture.png
 cabbage stage 4_cabbage texture.png::CompressedTexture2D::158911329379852581::1780217652::1780217714::1::::<><><>0<>0<>1aa5e936b4dd88f2db7f7efcb82870c2<>res://.godot/imported/cabbage stage 4_cabbage texture.png-43e8304196520eeb7cbf4a90a6b4969a.s3tc.ctex::
-cabbage.tscn::PackedScene::9082308621365488185::1780218641::0::1::::<><><>0<>0<><>::uid://b0xivkf4jy20o::::res://plants/cabbage/cabbage stage 0_cabbage texture.png<>uid://tptajv73mbrw::::res://plants/plant.gd<>uid://chikghukhy6nh::::res://plants/cabbage/cabbage data.tres<>uid://dic5v2566bhj3::::res://plants/cabbage/cabbage stage 1_cabbage texture.png<>uid://crf3ehf3rdj04::::res://plants/cabbage/cabbage stage 2_cabbage texture.png<>uid://jpbxew7y7fkm::::res://plants/cabbage/cabbage stage 3_cabbage texture.png<>uid://ci8im2vlak4t::::res://plants/cabbage/cabbage stage 4_cabbage texture.png<>uid://b8qj204fg2gkq::::res://plants/plant static body.gd
-cabbage data.tres::Resource/PlantData::5281296578600228525::1780218164::0::1::::<><><>0<>0<><>::uid://b2b0yhjdgpo8b::::res://item/items/cabbage.tres<>uid://dee08wu7uknoq::::res://plants/plant_data.gd
-::res://plants/carrot/::1780218628
-carrot data.tres::Resource/PlantData::4974475763720483583::1779541784::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://chan1t8wec4vj::::res://item/items/carrot.tres
+cabbage.tscn::PackedScene::9082308621365488185::1791317021::0::1::::<><><>0<>0<><>::uid://b0xivkf4jy20o::::res://plants/cabbage/cabbage stage 0_cabbage texture.png<>uid://tptajv73mbrw::::res://plants/plant.gd<>uid://chikghukhy6nh::::res://plants/cabbage/cabbage data.tres<>uid://dic5v2566bhj3::::res://plants/cabbage/cabbage stage 1_cabbage texture.png<>uid://crf3ehf3rdj04::::res://plants/cabbage/cabbage stage 2_cabbage texture.png<>uid://jpbxew7y7fkm::::res://plants/cabbage/cabbage stage 3_cabbage texture.png<>uid://ci8im2vlak4t::::res://plants/cabbage/cabbage stage 4_cabbage texture.png<>uid://b8qj204fg2gkq::::res://plants/plant static body.gd
+::res://plants/carrot/::1791316835
+carrot data.tres::Resource/PlantData::4974475763720483583::1791316835::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://chan1t8wec4vj::::res://item/items/plants/carrot.tres
 carrot stage 0.glb::PackedScene::119717847656084829::1777125863::1777125863::1::::<><><>0<>0<>fbe84193dbfd472ec5c3e53753e935df<>res://.godot/imported/carrot stage 0.glb-50b60af0425811edd43fe13def3b4197.scn::
 carrot stage 1.glb::PackedScene::2928934604719317029::1777125863::1777125864::1::::<><><>0<>0<>207f7b896686151de0edc8312a229d56<>res://.godot/imported/carrot stage 1.glb-4becfcdaef6de1e53bd5991c5f1186e6.scn::uid://leboaec58hoj::::res://plants/carrot/carrot stage 1_carrot texture 64.png
 carrot stage 1_carrot texture 64.png::CompressedTexture2D::780420515453514537::1777125863::1777125864::1::::<><><>0<>0<>83c9ff9a827834213da2c8060497cf4c<>res://.godot/imported/carrot stage 1_carrot texture 64.png-9c460078c329eb4ec5164f869c75db14.s3tc.ctex::
@@ -164,17 +174,17 @@ carrot.tscn::PackedScene::8920823483695709132::1780218544::0::1::::<><><>0<>0<><
 cuteCarrot.glb::PackedScene::1678024207806895000::1776592624::1776596233::1::::<><><>0<>0<>6c688a4f099e2e3d48e6403286b7231d<>res://.godot/imported/cuteCarrot.glb-60f5c7ccd3616ef8166f220d4465ebf7.scn::uid://c285a6ym33cgn::::res://plants/carrot/cuteCarrot_carrot texture 64.png
 cuteCarrot.obj::Mesh::3272995694761860888::1776594886::1776596233::1::::<><><>0<>0<>7165c4f4968ebccabfcb73230b3cd9b5<>res://.godot/imported/cuteCarrot.obj-f5f158570abd0209f6b055d73d643748.mesh<*>res://.godot/imported/cuteCarrot.obj-f5f158570abd0209f6b055d73d643748.mesh::
 cuteCarrot_carrot texture 64.png::CompressedTexture2D::6737887787162948993::1776592624::1776596233::1::::<><><>0<>0<>317d58bf18dc924d87d6f63371736202<>res://.godot/imported/cuteCarrot_carrot texture 64.png-67aadda05c08332bc8a779ad9fa0ecc3.s3tc.ctex::
-::res://plants/potato/::1780220189
+::res://plants/potato/::1791318081
+potato data.tres::Resource/PlantData::1876442423522191445::1791316836::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://56r0wskkomfs::::res://item/items/plants/potato.tres
 potato stage 0.glb::PackedScene::9205934580545197291::1780219411::1780219411::1::::<><><>0<>0<>3d00a020f6fadd0013cc4fce0aa77148<>res://.godot/imported/potato stage 0.glb-23d756aa46459ab6015d463a8ea2630a.scn::
 potato stage 1.glb::PackedScene::2439224891404781245::1780219411::1780219412::1::::<><><>0<>0<>9606e59b50e9491fc94c711c03c0bde2<>res://.godot/imported/potato stage 1.glb-21942e49fdc0ce8c557276763d7b1745.scn::uid://iy84ftvkmbgf::::res://plants/potato/potato stage 1_potato stage 3 texture.png
-potato stage 2.glb::PackedScene::2096497098473643717::1780219411::1780219412::1::::<><><>0<>0<>0a757bfef20dde18ad7564c972e3cebb<>res://.godot/imported/potato stage 2.glb-15b3b60834b5fa102da870670d20beea.scn::uid://srj2vyhjeyqv::::res://plants/potato/potato stage 2_potato stage 3 texture.png
-potato stage 3.glb::PackedScene::641654949809973113::1780219411::1780219412::1::::<><><>0<>0<>1a8debacdf278f1c41a4e3a38a2b3314<>res://.godot/imported/potato stage 3.glb-7f87a4ebd67242a12e4e5fb8982cf6be.scn::uid://bvmng0hpeqr50::::res://plants/potato/potato stage 3_potato stage 3 texture.png
 potato stage 1_potato stage 3 texture.png::CompressedTexture2D::613111556922243893::1780219411::1780219413::1::::<><><>0<>0<>0969562155d65207c6cb867444a54961<>res://.godot/imported/potato stage 1_potato stage 3 texture.png-7e0bf7dd2acd3b5281364d8463bb52e0.s3tc.ctex::
+potato stage 2.glb::PackedScene::2096497098473643717::1780219411::1780219412::1::::<><><>0<>0<>0a757bfef20dde18ad7564c972e3cebb<>res://.godot/imported/potato stage 2.glb-15b3b60834b5fa102da870670d20beea.scn::uid://srj2vyhjeyqv::::res://plants/potato/potato stage 2_potato stage 3 texture.png
 potato stage 2_potato stage 3 texture.png::CompressedTexture2D::1299089417069848997::1780219412::1780219413::1::::<><><>0<>0<>4dc274904fde2eccf24462b3aee2193b<>res://.godot/imported/potato stage 2_potato stage 3 texture.png-7f07966d8e714a16ced7d7c63e35c4df.s3tc.ctex::
+potato stage 3.glb::PackedScene::641654949809973113::1780219411::1780219412::1::::<><><>0<>0<>1a8debacdf278f1c41a4e3a38a2b3314<>res://.godot/imported/potato stage 3.glb-7f87a4ebd67242a12e4e5fb8982cf6be.scn::uid://bvmng0hpeqr50::::res://plants/potato/potato stage 3_potato stage 3 texture.png
 potato stage 3_potato stage 3 texture.png::CompressedTexture2D::3885960293394802617::1780219412::1780219413::1::::<><><>0<>0<>4d2401c26e352a4d8122fcc3c0ec1252<>res://.godot/imported/potato stage 3_potato stage 3 texture.png-7e2ce909c8c38dd5598a3f579438ec22.s3tc.ctex::
-potato.tscn::PackedScene::121906577340860690::1780220189::0::1::::<><><>0<>0<><>::uid://tptajv73mbrw::::res://plants/plant.gd<>uid://iy84ftvkmbgf::::res://plants/potato/potato stage 1_potato stage 3 texture.png<>uid://1y7y53xkgyyv::::res://plants/potato/potato data.tres<>uid://srj2vyhjeyqv::::res://plants/potato/potato stage 2_potato stage 3 texture.png<>uid://bvmng0hpeqr50::::res://plants/potato/potato stage 3_potato stage 3 texture.png<>uid://b8qj204fg2gkq::::res://plants/plant static body.gd
-potato data.tres::Resource/PlantData::1876442423522191445::1780220042::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://56r0wskkomfs::::res://item/items/potato.tres
-::res://plants/wheat/::1780218638
+potato.tscn::PackedScene::121906577340860690::1791318081::0::1::::<><><>0<>0<><>::uid://tptajv73mbrw::::res://plants/plant.gd<>uid://iy84ftvkmbgf::::res://plants/potato/potato stage 1_potato stage 3 texture.png<>uid://1y7y53xkgyyv::::res://plants/potato/potato data.tres<>uid://srj2vyhjeyqv::::res://plants/potato/potato stage 2_potato stage 3 texture.png<>uid://bvmng0hpeqr50::::res://plants/potato/potato stage 3_potato stage 3 texture.png<>uid://b8qj204fg2gkq::::res://plants/plant static body.gd
+::res://plants/wheat/::1791316838
 cuteWheat.glb::PackedScene::2895994094684944485::1777031663::1777031714::1::::<><><>0<>0<>0949983420c8a976f78a5c20b7b95095<>res://.godot/imported/cuteWheat.glb-7a762e7283b98bc903c1173ba79d9b2c.scn::uid://nhsdirgqo0md::::res://plants/wheat/cuteWheat_wheat texture.png
 cuteWheat_wheat texture.png::CompressedTexture2D::928004321567400175::1777031714::1777031715::1::::<><><>0<>0<>b9fb82ae3407423f1d3c60d5ddc29477<>res://.godot/imported/cuteWheat_wheat texture.png-0aa110a6ac57dec0ec6377572e8cb325.s3tc.ctex::
 wheat stage 0.glb::PackedScene::4816219198221976689::1779545587::1779545587::1::::<><><>0<>0<>9cb7bbae30cb7653ed78f4b485717074<>res://.godot/imported/wheat stage 0.glb-94fab4eaa8586f35858ad8c8abfabe7b.scn::uid://esyajtod3r3x::::res://plants/wheat/wheat stage 0_wheat texture.png
@@ -188,4 +198,14 @@ wheat stage 3_wheat texture.png::CompressedTexture2D::8621294320783423493::17795
 wheat stage 4.glb::PackedScene::1596531249444896897::1779545587::1779545420::1::::<><><>0<>0<>a2574057f9bb415da77986c5cb1c48d8<>res://.godot/imported/wheat stage 4.glb-768e4972fd6256334af2b81ad57eeed4.scn::uid://csctu3cmkl40l::::res://plants/wheat/wheat stage 4_wheat texture.png
 wheat stage 4_wheat texture.png::CompressedTexture2D::6041560121422033353::1779545420::1779545421::1::::<><><>0<>0<>5dc0a837fd606d50978d6b6826f12fd4<>res://.godot/imported/wheat stage 4_wheat texture.png-085eed3f79ed8bae72d6e6e3c338a6ac.s3tc.ctex::
 wheat.tscn::PackedScene::8777778911793337005::1780218516::0::1::::<><><>0<>0<><>::uid://esyajtod3r3x::::res://plants/wheat/wheat stage 0_wheat texture.png<>uid://tptajv73mbrw::::res://plants/plant.gd<>uid://b31duy1n14n0t::::res://plants/wheat/wheat_data.tres<>uid://dpotkv51koqdx::::res://plants/wheat/wheat stage 1_wheat texture.png<>uid://bpqrnjuyf5etr::::res://plants/wheat/wheat stage 2_wheat texture.png<>uid://du3hptkm1e6np::::res://plants/wheat/wheat stage 3_wheat texture.png<>uid://csctu3cmkl40l::::res://plants/wheat/wheat stage 4_wheat texture.png<>uid://b8qj204fg2gkq::::res://plants/plant static body.gd
-wheat_data.tres::Resource/PlantData::4405601295371838529::1780217020::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://w2m3wo21nv3b::::res://item/items/wheat.tres
+wheat_data.tres::Resource/PlantData::4405601295371838529::1791316838::0::1::::<><><>0<>0<><>::uid://dee08wu7uknoq::::res://plants/plant_data.gd<>uid://w2m3wo21nv3b::::res://item/items/plants/wheat.tres
+::res://shops/::1791136742
+shop_data.gd::GDScript::2649915586992712704::1790964685::0::1::::ShopData<>Resource<><>0<>0<><>::
+::res://shops/farm_shop/::1791318081
+button.gd::GDScript::2228985449070941432::1790617783::0::1::::<>Button<><>0<>0<><>::
+farm_shop.gd::GDScript::6827140252487518889::1790964371::0::1::::FarmShop<>Node<><>0<>0<><>::
+farm_shop.tres::Resource/ShopData::6084012206261891387::1791318081::0::1::::<><><>0<>0<><>::uid://bd0vytjrjwrxo::::res://shops/shop_data.gd<>uid://cflq8ryvmpplp::::res://inventory/slot_data.gd<>uid://caova4tbck5hp::::res://item/items/seeds/carrot seeds.tres<>uid://c017a3l03heev::::res://item/items/seeds/potato seeds.tres<>uid://cha70hp0rcukj::::res://item/items/seeds/cabbage seeds.tres<>uid://cbjvu4513k64v::::res://item/items/seeds/wheat seeds.tres
+farm_shop.tscn::PackedScene::5923390057644576627::1790964410::0::1::::<><><>0<>0<><>::uid://c4jeac5j5xyl2::::res://shops/farm_shop/farm_shop.gd<>uid://csxe16y0acl4f::::res://shops/farm_shop/farm_shop.tres<>uid://crb181eqcwpy6::::res://shops/farm_shop/farm_shop_static_body.gd
+farm_shop_interface.gd::GDScript::6359918404050472999::1791136808::0::1::::<>PanelContainer<><>0<>0<><>::
+farm_shop_interface.tscn::PackedScene::5136442299758754699::1790964377::0::1::::<><><>0<>0<><>::uid://cwu16rrvh68vr::::res://shops/farm_shop/farm_shop_interface.gd<>uid://600cg1qbd5ke::::res://shops/farm_shop/button.gd
+farm_shop_static_body.gd::GDScript::5969755032514445787::1790616965::0::1::::<>StaticBody3D<><>0<>0<><>::
