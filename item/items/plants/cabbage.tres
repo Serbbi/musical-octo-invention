@@ -9,4 +9,6 @@ name = "Cabbage"
 description = "It's what rabbits eat."
 stackable = true
 texture = ExtResource("2_2ju7c")
+buying_price = 11
+selling_price = 10
 metadata/_custom_type_script = "uid://j7kmlgu1ducu"

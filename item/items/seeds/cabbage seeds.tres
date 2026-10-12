@@ -11,4 +11,6 @@ name = "Cabbage Seeds"
 description = "You can grow some caabbgaae"
 stackable = true
 texture = ExtResource("3_8e10b")
+buying_price = 6
+selling_price = 3
 metadata/_custom_type_script = "uid://guwcxsae1m8a"

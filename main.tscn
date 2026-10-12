@@ -1,9 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://vy3nr71u80p3"]
+[gd_scene load_steps=16 format=3 uid="uid://vy3nr71u80p3"]
 
 [ext_resource type="Script" uid="uid://vqq4d3vnxcpr" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://257el4dtn2y1" path="res://inventory/inventory.tscn" id="3_h2yge"]
+[ext_resource type="Environment" uid="uid://dgbf2m0hoikng" path="res://env.tres" id="3_ycdy4"]
 [ext_resource type="Script" uid="uid://bhj2t3kutjav1" path="res://inventory/inventory_interface.gd" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://chn74duhposy4" path="res://UI/coins.tscn" id="4_vivmo"]
 [ext_resource type="PackedScene" uid="uid://c15p15o3ej72p" path="res://inventory/hot_bar_inventory.tscn" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://fwr6e7oqojga" path="res://inventory/slot.tscn" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://8y71lwoo2g2x" path="res://plants/soil_mound.tscn" id="6_272bh"]
@@ -11,17 +13,26 @@
 [ext_resource type="PackedScene" uid="uid://cqnlmsmsr7r76" path="res://shops/farm_shop/farm_shop.tscn" id="9_kek77"]
 [ext_resource type="Script" uid="uid://b31eaf86u1q4c" path="res://managers/UI_manager.gd" id="11_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bbqv5egvv5d0p" path="res://terrain.tscn" id="11_efxa6"]
+[ext_resource type="PackedScene" uid="uid://b8ilxvlsyp041" path="res://wooden_bin.tscn" id="12_dg77c"]
+[ext_resource type="PackedScene" uid="uid://c8t3wlk85mavx" path="res://wooden_box.tscn" id="14_w48qg"]
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_1bvp3")
 
 [node name="ProtoController" parent="." instance=ExtResource("2_0xm2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.819285, 3, 0.6618519)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.6052245, 0.79605484, 0, -0.79605484, 0.6052245, 0, 18.14602, 0)
+transform = Transform3D(0.7266586, -0.16790971, 0.6661633, -0.6603756, 0.096606195, 0.7446954, -0.18939711, -0.98105747, -0.040683776, 0, 20.427996, 0.19536972)
+light_color = Color(0.91411847, 0.93562424, 0.9303523, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D"]
+environment = ExtResource("3_ycdy4")
 
 [node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Coins" parent="UI" instance=ExtResource("4_vivmo")]
 
 [node name="InventoryInterface" type="Control" parent="UI"]
 visible = false
@@ -39,6 +50,14 @@ offset_left = 10.0
 offset_top = 10.0
 offset_right = 50.0
 offset_bottom = 50.0
+
+[node name="ExternalInventory" parent="UI/InventoryInterface" instance=ExtResource("3_h2yge")]
+visible = false
+layout_mode = 0
+offset_left = 725.0
+offset_top = 342.0
+offset_right = 765.0
+offset_bottom = 382.0
 
 [node name="GrabbedSlot" parent="UI/InventoryInterface" instance=ExtResource("6_7mycd")]
 visible = false
@@ -63,7 +82,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.846064, 0, -3)
 [node name="Terrain" parent="." instance=ExtResource("11_efxa6")]
 
 [node name="Farm_Shop" parent="." instance=ExtResource("9_kek77")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.520673)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01660037, -2.3841858e-07, 7.5082765)
 
 [node name="UIManager" type="Node" parent="."]
 script = ExtResource("11_dg77c")
+
+[node name="Wooden Bin" parent="." instance=ExtResource("12_dg77c")]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, -7.1990895, 0.0039462247, 0.09373903)
+
+[node name="Wooden Box" parent="." groups=["external_inventory"] instance=ExtResource("14_w48qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1766863, 0, 2.3472314)

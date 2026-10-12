@@ -52,11 +52,13 @@ var move_speed : float = 0.0
 var freeflying : bool = false
 var selected_hotbar_index: int = 0
 var input_enabled := true
+var coins := 100
 
 ## IMPORTANT REFERENCES
 @onready var collider: CollisionShape3D = $Collider
 
 signal toggle_inventory()
+signal coins_changed(number: int)
 
 @onready var interact_ray: RayCast3D = $CameraController/CameraTarget/InteractRay
 
@@ -196,13 +198,14 @@ func interact() -> void:
 	
 	if interact_ray.is_colliding():
 		var collider = interact_ray.get_collider()
+		var target = collider.interactable if "interactable" in collider else collider
 
-		if collider.interactable:
-			var success = collider.interactable.interact(self, item)
-			
+		if target and target.has_method("interact"):
+			var success = target.interact(self, item)
+
 			if success:
 				inventory_data.remove_item(selected_hotbar_index, 1)
-			
+
 func _on_hotbar_selected(index: int) -> void:
 	selected_hotbar_index = index
 	print("Selected slot:", index)
@@ -213,3 +216,7 @@ func get_selected_item() -> ItemData:
 		return slot_data.item_data
 		
 	return null
+	
+func set_player_coins(amount: int) -> void:
+	coins += amount
+	coins_changed.emit(coins)

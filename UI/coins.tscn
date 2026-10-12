@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://chn74duhposy4"]
+
+[ext_resource type="Texture2D" uid="uid://dae07liakuo8p" path="res://UI/coin.png" id="1_c0nvq"]
+[ext_resource type="Script" uid="uid://cophv83dctuk5" path="res://UI/coins.gd" id="1_nw8ua"]
+
+[node name="Coins" type="PanelContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 50.0
+grow_horizontal = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_nw8ua")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_c0nvq")
+expand_mode = 2

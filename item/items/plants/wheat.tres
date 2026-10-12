@@ -8,4 +8,6 @@ script = ExtResource("1_b1jrq")
 name = "Wheat"
 stackable = true
 texture = ExtResource("2_p5dmn")
+buying_price = 10
+selling_price = 9
 metadata/_custom_type_script = "uid://j7kmlgu1ducu"

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://2g0kqe4facek"
-path="res://.godot/imported/Cube.glb-dc5d0025a1c17debcd6525ad30e7d81f.scn"
+uid="uid://d4g83emkraai3"
+path="res://.godot/imported/wooden box.glb-690351938395521950af544732c2adcb.scn"
 
 [deps]
 
-source_file="res://Cube.glb"
-dest_files=["res://.godot/imported/Cube.glb-dc5d0025a1c17debcd6525ad30e7d81f.scn"]
+source_file="res://wooden box.glb"
+dest_files=["res://.godot/imported/wooden box.glb-690351938395521950af544732c2adcb.scn"]
 
 [params]
 

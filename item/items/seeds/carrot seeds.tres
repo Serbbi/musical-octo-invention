@@ -10,4 +10,6 @@ plant_scene = ExtResource("1_cpa46")
 name = "Carrot Seeds"
 stackable = true
 texture = ExtResource("3_x3bvw")
+buying_price = 2
+selling_price = 1
 metadata/_custom_type_script = "uid://guwcxsae1m8a"

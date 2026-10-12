@@ -11,4 +11,6 @@ name = "Potato Seeds"
 description = "It's actually just a potato."
 stackable = true
 texture = ExtResource("3_sf886")
+buying_price = 10
+selling_price = 7
 metadata/_custom_type_script = "uid://guwcxsae1m8a"

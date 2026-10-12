@@ -1,15 +1,15 @@
+HBoxContainer
+Label      - Matches the "text" keyword.
+TextureRect
+MarginContainer
+PanelContainer
+CollisionShape3D
+StaticBody3D
+WorldEnvironment
 Node
 Button
 TextureButton
-CollisionShape3D
-StaticBody3D
 Control
 GridContainer
 ItemList
-PanelContainer
-MarginContainer
 Node3D
-MeshInstance3D
-HBoxContainer
-Marker3D
-Terrain3D
