@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://vy3nr71u80p3"]
+[gd_scene format=3 uid="uid://vy3nr71u80p3"]
 
 [ext_resource type="Script" uid="uid://vqq4d3vnxcpr" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0xm2m"]
@@ -15,26 +15,31 @@
 [ext_resource type="PackedScene" uid="uid://bbqv5egvv5d0p" path="res://terrain.tscn" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://b8ilxvlsyp041" path="res://wooden_bin.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://c8t3wlk85mavx" path="res://wooden_box.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://bcofxhglwndb4" path="res://item/items/tools/pot.tscn" id="16_2cqfq"]
 
-[node name="Main" type="Node3D"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yaehf"]
+resource_local_to_scene = true
+bg_color = Color(0.2509804, 0.24313726, 0.24313726, 1)
+
+[node name="Main" type="Node3D" unique_id=1837570367]
 script = ExtResource("1_1bvp3")
 
-[node name="ProtoController" parent="." instance=ExtResource("2_0xm2m")]
+[node name="ProtoController" parent="." unique_id=1876183106 instance=ExtResource("2_0xm2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.819285, 3, 0.6618519)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1543248410]
 transform = Transform3D(0.7266586, -0.16790971, 0.6661633, -0.6603756, 0.096606195, 0.7446954, -0.18939711, -0.98105747, -0.040683776, 0, 20.427996, 0.19536972)
 light_color = Color(0.91411847, 0.93562424, 0.9303523, 1)
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D" unique_id=401482315]
 environment = ExtResource("3_ycdy4")
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="." unique_id=820310661]
 
-[node name="Coins" parent="UI" instance=ExtResource("4_vivmo")]
+[node name="Coins" parent="UI" unique_id=1239406000 instance=ExtResource("4_vivmo")]
 
-[node name="InventoryInterface" type="Control" parent="UI"]
+[node name="InventoryInterface" type="Control" parent="UI" unique_id=1543064958]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -44,14 +49,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4_lquwl")
 
-[node name="PlayerInventory" parent="UI/InventoryInterface" instance=ExtResource("3_h2yge")]
+[node name="PlayerInventory" parent="UI/InventoryInterface" unique_id=1254950448 instance=ExtResource("3_h2yge")]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 10.0
 offset_right = 50.0
 offset_bottom = 50.0
 
-[node name="ExternalInventory" parent="UI/InventoryInterface" instance=ExtResource("3_h2yge")]
+[node name="ExternalInventory" parent="UI/InventoryInterface" unique_id=1415664839 instance=ExtResource("3_h2yge")]
 visible = false
 layout_mode = 0
 offset_left = 725.0
@@ -59,7 +64,7 @@ offset_top = 342.0
 offset_right = 765.0
 offset_bottom = 382.0
 
-[node name="GrabbedSlot" parent="UI/InventoryInterface" instance=ExtResource("6_7mycd")]
+[node name="GrabbedSlot" parent="UI/InventoryInterface" unique_id=1487322840 instance=ExtResource("6_7mycd")]
 visible = false
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
@@ -67,28 +72,32 @@ offset_left = 10.0
 offset_top = 10.0
 offset_right = 90.0
 offset_bottom = 90.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yaehf")
 
-[node name="HotBarInventory" parent="UI" instance=ExtResource("6_5vw27")]
+[node name="HotBarInventory" parent="UI" unique_id=544268645 instance=ExtResource("6_5vw27")]
 
-[node name="FarmShopInterface" parent="UI" instance=ExtResource("7_4c57u")]
+[node name="FarmShopInterface" parent="UI" unique_id=701848704 instance=ExtResource("7_4c57u")]
 visible = false
 
-[node name="soil mound" parent="." instance=ExtResource("6_272bh")]
+[node name="soil mound" parent="." unique_id=769466698 instance=ExtResource("6_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="soil mound2" parent="." instance=ExtResource("6_272bh")]
+[node name="soil mound2" parent="." unique_id=1094407161 instance=ExtResource("6_272bh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.846064, 0, -3)
 
-[node name="Terrain" parent="." instance=ExtResource("11_efxa6")]
+[node name="Terrain" parent="." unique_id=612445340 instance=ExtResource("11_efxa6")]
 
-[node name="Farm_Shop" parent="." instance=ExtResource("9_kek77")]
+[node name="Farm_Shop" parent="." unique_id=398893828 instance=ExtResource("9_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01660037, -2.3841858e-07, 7.5082765)
 
-[node name="UIManager" type="Node" parent="."]
+[node name="UIManager" type="Node" parent="." unique_id=757509644]
 script = ExtResource("11_dg77c")
 
-[node name="Wooden Bin" parent="." instance=ExtResource("12_dg77c")]
+[node name="Wooden Bin" parent="." unique_id=127166884 instance=ExtResource("12_dg77c")]
 transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, -7.1990895, 0.0039462247, 0.09373903)
 
-[node name="Wooden Box" parent="." groups=["external_inventory"] instance=ExtResource("14_w48qg")]
+[node name="Wooden Box" parent="." unique_id=562102505 groups=["external_inventory"] instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1766863, 0, 2.3472314)
+
+[node name="Pot" parent="." unique_id=1068719656 instance=ExtResource("16_2cqfq")]
+transform = Transform3D(0.44, 0, 0, 0, 0.44, 0, 0, 0, 0.44, 6.1518135, 0, 1.4781282)

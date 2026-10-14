@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ShopData" load_steps=11 format=3 uid="uid://csxe16y0acl4f"]
+[gd_resource type="Resource" script_class="ShopData" format=3 uid="uid://csxe16y0acl4f"]
 
 [ext_resource type="Script" uid="uid://bd0vytjrjwrxo" path="res://shops/shop_data.gd" id="1_fy4d6"]
 [ext_resource type="Script" uid="uid://cflq8ryvmpplp" path="res://inventory/slot_data.gd" id="2_jq8ge"]

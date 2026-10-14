@@ -1,5 +1,5 @@
-ShopData
 ItemData
+ShopData
 SeedItemData
 PlantData
 InventoryData

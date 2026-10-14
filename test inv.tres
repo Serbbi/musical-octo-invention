@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="InventoryData" load_steps=17 format=3 uid="uid://bv7rh5vl7k12e"]
+[gd_resource type="Resource" script_class="InventoryData" format=3 uid="uid://bv7rh5vl7k12e"]
 
 [ext_resource type="Script" uid="uid://bdsirkh5umx3s" path="res://inventory/inventory_data.gd" id="1_4gheq"]
 [ext_resource type="Script" uid="uid://cflq8ryvmpplp" path="res://inventory/slot_data.gd" id="2_bkdvx"]
-[ext_resource type="Resource" uid="uid://bqupkf5eu3av1" path="res://item/items/tools/hoe.tres" id="3_i88m2"]
+[ext_resource type="Resource" uid="uid://cuwsj1a8rqx41" path="res://item/items/tools/watercan.tres" id="3_i88m2"]
 [ext_resource type="Resource" uid="uid://43wtmfytvcl" path="res://item/items/apple.tres" id="3_txxfk"]
 [ext_resource type="Resource" uid="uid://bf0nxp4do0icl" path="res://item/items/blue book.tres" id="4_7bcyg"]
 [ext_resource type="Resource" uid="uid://c017a3l03heev" path="res://item/items/seeds/potato seeds.tres" id="4_i88m2"]

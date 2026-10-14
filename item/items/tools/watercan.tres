@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cuwsj1a8rqx41"]
+
+[ext_resource type="Script" uid="uid://j7kmlgu1ducu" path="res://item/item_data.gd" id="1_nuaaq"]
+[ext_resource type="Texture2D" uid="uid://b0sjaauj58rlp" path="res://item/items/tools/watercan.png" id="2_i60ua"]
+
+[resource]
+script = ExtResource("1_nuaaq")
+name = "Watering Can"
+description = "Used to pour water over plants."
+texture = ExtResource("2_i60ua")
+buying_price = 50
+metadata/_custom_type_script = "uid://j7kmlgu1ducu"
